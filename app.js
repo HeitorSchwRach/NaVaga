@@ -11,6 +11,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+
 app.use('/usuarios', usuariosRouter);
 app.use('/vagas', vagasRouter);
 app.use('/sensores', sensoresRouter);

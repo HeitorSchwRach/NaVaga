@@ -6,6 +6,7 @@ const jwt = require('jsonwebtoken');
 const registerUser = async (req, res) => {
   try {
     const { nome, email, senha } = req.body;
+    console.log(req.body);
 
     if (!nome || !email || !senha) {
       return res.status(400).json({ error: 'Nome, email e senha são obrigatórios' });

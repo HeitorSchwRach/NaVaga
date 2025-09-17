@@ -3,6 +3,8 @@ const db = require('../db');
 const sensorEvent = async (req, res) => {
   try {
     const { codigo_sensor, status, usuario_id } = req.body;
+    console.log(req.body);
+    
     if (!codigo_sensor || !status) return res.status(400).json({ error: 'codigo_sensor e status são obrigatórios' });
     if (!['livre', 'ocupada'].includes(status)) return res.status(400).json({ error: 'status inválido' });
 
