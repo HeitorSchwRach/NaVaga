@@ -276,5 +276,6 @@ Todos os arquivos `.js` principais (`app.js`, `db.js`, `controllers/*.js`, `midd
 
 ## Autor
 
-Manus AI
+Heitor Schwinden Rachadel
+
 
